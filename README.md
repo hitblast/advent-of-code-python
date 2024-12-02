@@ -1,5 +1,7 @@
 <div align="center">
+
 # 🐍 Advent of Code: Solutions in Python
+
 </div>
 
 ## Overview
