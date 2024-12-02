@@ -7,7 +7,7 @@
 	- [x] Add script execution
 	- [ ] Properly document the integration
 - [ ] Add more CLI commands:
-  - [ ] `run`
+  - [x] `run`
   - [ ] `test`
   - [ ] `init`
 - [ ] Prepare CI/CD workflows for running unit tests
