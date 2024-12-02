@@ -8,6 +8,10 @@
 
 This repository is a curation of my personal solutions to the yearly "Advent of Code" puzzles, starting from December 2024. All of the solutions in this repository are written in the [Python](https://python.org) programming language. <br>
 
+## ToDo
+
+Please view [this TODO.md file](TODO.md) to see what's currently up with the current tasks for this repository.
+
 ## Get started
 
 <!-- TBA -->
