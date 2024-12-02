@@ -1,0 +1,7 @@
+version = 1
+requires-python = ">=3.13"
+
+[[package]]
+name = "advent-of-code-python"
+version = "2024.12.2"
+source = { virtual = "." }
