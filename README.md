@@ -10,7 +10,7 @@ This repository is a curation of my personal solutions to the yearly "Advent of 
 
 ## ToDo
 
-Please view [this TODO.md file](TODO.md) to see what's currently up with the current tasks for this repository.
+Please view [this TODO.md file](TODO.md) to see what's currently up with the tasks for this repository.
 
 ## Get started
 
