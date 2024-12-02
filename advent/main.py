@@ -46,45 +46,48 @@ def run(
     use_preincluded_data: bool = False,
 ) -> None:
     day, part = day_part.split(":")
-
-    # Initial variables.
-    # Necessary for accessing the inner structure of the project via importlib.
-    current_year = datetime.now().year if not year else year
-    data = ""
+    current_year = year or datetime.now().year
     module_name = f"advent.year_{current_year}.day{day}"
     function_name = f"part{part}"
 
+    # Check if the file exists / the user has selected to use the --use-preincluded-data flag.
     if file:
-        with open(file, "r") as f:
-            data = f.read()
-            f.close()
-    else:
-        if use_preincluded_data:
-            data = grab_data(day=int(day), year=current_year)
-        else:
+        try:
+            with open(file, "r") as f:
+                data = f.read()
+        except FileNotFoundError:
             print(
-                "Error: Pass a data file using --file / -f or pass --use-preincluded-data to use developer-defined dataset."
+                f"\nError: Code solution for Advent of Code {current_year} (Day {day}, Part {part}) wasn't found."
             )
             return
+    elif use_preincluded_data:
+        try:
+            data = grab_data(day=int(day), year=current_year)
+        except FileNotFoundError:
+            print(
+                f"\nError: Solution for challenge: Advent of Code {current_year} (Day {day}, Part {part}) wasn't found."
+            )
+            return
+    else:
+        print(
+            "\nError: Pass a data file using --file / -f or pass --use-preincluded-data to use developer-defined dataset."
+        )
+        return
 
+    # Final (and most important layer) of checks.
     try:
         module = importlib.import_module(module_name)
         function = getattr(module, function_name)
         result = function(data)
-
-    except ModuleNotFoundError as _:
+    except ModuleNotFoundError:
         print(
-            "Error: Year might be invalid. Type 'advent list-years' to see available years."
+            f"\nError: Year {current_year} or day {day} might be invalid. Type 'advent list-years' to see available years."
         )
-
-    except AttributeError as _:
+    except AttributeError:
         print(
-            "Error: Day or part might be invalid. Type 'advent list-days' to see available days."
+            f"\nError: Part {part} for day {day} might be invalid. Type 'advent list-days' to see available days."
         )
-
+    except FileNotFoundError as e:
+        print(f"\nError: {e}")
     else:
-        print(f"Result: {result}")
-
-
-if __name__ == "__main__":
-    cli()
+        print(f"\nResult: {result}")

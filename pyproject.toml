@@ -1,3 +1,4 @@
+# project-specific things
 [project]
 name = "advent-of-code-python"
 version = "2024.12.3"
@@ -17,3 +18,10 @@ only-include = ["advent"]
 
 [tool.hatch.build.targets.wheel]
 packages = ["advent"]
+
+# code style-specific things (ruff used definitely)
+[tool.ruff]
+target-version = "py313"
+line-length = 90
+exclude = [".venv"]
+fix = true

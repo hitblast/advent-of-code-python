@@ -16,10 +16,10 @@ def grab_data(*, day: int, year: int | None = None) -> str:
 
 
 # Create a decorator to support the function.
-def data_decorator(day: int):
+def data_decorator(day: int, year: int):
     def decorator(func):
         def wrapper(*args, **kwargs):
-            data = grab_data(day=day)
+            data = grab_data(day=day, year=year)
             return func(data, *args, **kwargs)
 
         return wrapper
