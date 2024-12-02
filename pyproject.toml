@@ -1,7 +1,19 @@
 [project]
 name = "advent-of-code-python"
-version = "2024.12.2"
-description = "🐍 Advent of Code (2024-onwards) solutions written in Python. "
+version = "2024.12.3"
+description = "🐍 Comprehensive Advent of Code solutions (2024 and onwards) written in Python."
 readme = "README.md"
 requires-python = ">=3.13"
-dependencies = []
+authors = [{ name = "HitBlast", email = "hitblastlive@gmail.com" }]
+dependencies = ["click>=8.1.7", "importlib>=1.0.4"]
+scripts = { advent = "advent.main:cli" }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.sdist]
+only-include = ["advent"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["advent"]

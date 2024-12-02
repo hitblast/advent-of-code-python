@@ -1,9 +1,4 @@
-# Imports.
-from sources import data_decorator
-
-
 # Day 2 - Part 1
-@data_decorator(day=2)
 def part1(data: str) -> int:
     safe_reports = 0
 
@@ -33,7 +28,6 @@ def part1(data: str) -> int:
 
 
 # Day 2 - Part 2
-@data_decorator(day=2)
 def part2(data: str) -> int:
     safe_reports = 0
 

@@ -1,9 +1,4 @@
-# Imports.
-from sources import data_decorator
-
-
 # Day 1 - Part 1
-@data_decorator(day=1)
 def part1(data: str) -> int | None:
     result = 0
 
@@ -30,7 +25,6 @@ def part1(data: str) -> int | None:
 
 
 # Day 1 - Part 2
-@data_decorator(day=1)
 def part2(data: str) -> int | None:
     result = 0
 
