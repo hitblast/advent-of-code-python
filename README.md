@@ -1,6 +1,8 @@
 <div align="center">
 
-# 🐍 Advent of Code: Solutions in Python
+## 🐍 Advent of Code: Solutions in Python
+
+#### (also usable as a template for your own!)
 
 </div>
 
@@ -53,21 +55,6 @@ If you want to simulate solutions for any given year, you can use the `--year` f
 ```bash
 $ advent run 2:2 --year 2024 --file path/to/input_data.txt
 ```
-
-or, you can also use the `--use-preincluded-data` flag to evaluate the results
-based on the data which is given by the package (these are created on the basis
-of my own personal solutions to the puzzles). Though, it is pretty much only for
-testing purposes and you're better off **using the preincluded unit tests
-instead.** See the next section for more information.
-
-```bash
-# Run without user data.
-$ advent run 3:1 --use-preincluded-data
-
-Result: 167090022
-$
-```
-
 <br>
 
 ## Testing
@@ -80,7 +67,20 @@ $ advent test  # or `aoc test`
 
 This command will check the solutions against the preincluded dataset and the
 accepted solutions from the official [Advent of Code
-website](https://adventofcode.com) to verify their integrity. <br>
+website](https://adventofcode.com) to verify their integrity.
+
+For manual testing (only for development purposes), you can run the previous
+command with the `--use-preincluded-data` flag to use the package dataset on
+your own:
+
+```bash
+# Run without user data.
+$ advent run 3:1 --use-preincluded-data
+
+Result: 167090022
+$
+```
+<br>
 
 ## Developing
 
@@ -88,7 +88,7 @@ Creating this utility was a fun project for me to take on alongside this awesome
 yearly event. But, if you would like to take the work further, I've included the
 requirements for programming on this project in the
 [CONTRIBUTING.md](CONTRIBUTING.md) file. Be sure to have a look and contribute!
-:D
+:D <br>
 
 ## Contributing
 
