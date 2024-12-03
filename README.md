@@ -14,10 +14,6 @@
 
 <br>
 
----
-
-<br>
-
 ## Overview
 
 This repository is a curation of my personal solutions to the yearly "Advent of
