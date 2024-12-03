@@ -46,6 +46,8 @@ Result: 167090022
 $
 ```
 
+<br>
+
 ## Contributing
 
 Pull requests are always welcome. If you do happen to find better, faster
