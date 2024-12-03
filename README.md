@@ -9,7 +9,7 @@
 This repository is a curation of my personal solutions to the yearly "Advent of
 Code" puzzles, starting from December 2024. All of the solutions in this
 repository are written in the [Python](https://python.org) programming language.
-<br>
+<br><br>
 
 ## Get Started
 
