@@ -11,7 +11,6 @@
 - [Installation](#installation)
 - [Get Started](#get-started)
 - [Testing](#testing)
-- [Developing](#developing)
 - [Contributing](#contributing)
 
 <br>
@@ -20,15 +19,28 @@
 
 This repository is a curation of my personal solutions to the yearly "Advent of
 Code" puzzles, starting from December 2024. All of the solutions in this
-repository are written in the [Python](https://python.org) programming language. <br><br>
+repository are written in the [Python](https://python.org) programming language.
+<br><br>
 
 ## Installation
 
-This project is based on Python 3.13.0, so you can easily install it using the `pip` package manager:
+This project is based on Python 3.13.0, so you can easily install it using the
+`pip` package manager:
 
 ```bash
 # Install from origin.
 $ pip install git+https://github.com/hitblast/advent-of-code-python.git
+```
+
+or, you can use [uv](https://github.com/astral-sh/uv) to install the project (no
+additional Python installations required):
+
+```bash
+# Clone the repository.
+$ git clone https?//github.com/hitblast/advent-of-code-python.git
+
+# Install the project.
+$ cd advent-of-code-python && uv sync
 ```
 
 <br>
@@ -57,7 +69,8 @@ $ advent run 2:2 --year 2024 --file path/to/input_data.txt
 
 ## Testing
 
-In order to check the integrity of the tests, we can simply run the following command:
+In order to check the integrity of the tests, we can simply run the following
+command:
 
 ```bash
 $ advent test  # or `aoc test`
@@ -79,14 +92,6 @@ Result: 167090022
 $
 ```
 <br>
-
-## Developing
-
-Creating this utility was a fun project for me to take on alongside this awesome
-yearly event. But, if you would like to take the work further, I've included the
-requirements for programming on this project in the
-[CONTRIBUTING.md](CONTRIBUTING.md) file. Be sure to have a look and contribute!
-:D <br>
 
 ## Contributing
 
