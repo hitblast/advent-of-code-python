@@ -2,8 +2,6 @@
 
 ## 🐍 Advent of Code: Solutions in Python
 
-#### (also usable as a template for your own!)
-
 </div>
 
 <br>
