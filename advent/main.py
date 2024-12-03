@@ -1,14 +1,11 @@
 # Imports.
 import importlib
-import sys
 from datetime import datetime
 
 import click
 import pytest
 
-sys.path.append("../")
-
-from sources import grab_data
+from advent import grab_data
 
 
 # Create a new CLI group instance for storing the CLI commands.
