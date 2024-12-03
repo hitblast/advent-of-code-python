@@ -37,7 +37,7 @@ additional Python installations required):
 
 ```bash
 # Clone the repository.
-$ git clone https?//github.com/hitblast/advent-of-code-python.git
+$ git clone https//github.com/hitblast/advent-of-code-python.git
 
 # Install the project.
 $ cd advent-of-code-python && uv sync
