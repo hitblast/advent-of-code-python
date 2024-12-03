@@ -8,10 +8,6 @@ source = { editable = "." }
 dependencies = [
     { name = "click" },
     { name = "importlib" },
-]
-
-[package.dev-dependencies]
-dev = [
     { name = "pytest" },
 ]
 
@@ -19,10 +15,11 @@ dev = [
 requires-dist = [
     { name = "click", specifier = ">=8.1.7" },
     { name = "importlib", specifier = ">=1.0.4" },
+    { name = "pytest", specifier = ">=8.3.4" },
 ]
 
 [package.metadata.requires-dev]
-dev = [{ name = "pytest", specifier = ">=8.3.4" }]
+dev = []
 
 [[package]]
 name = "click"

@@ -10,6 +10,8 @@
 
 - [Installation](#installation)
 - [Get Started](#get-started)
+- [Testing](#testing)
+- [Developing](#developing)
 - [Contributing](#contributing)
 
 <br>
@@ -56,7 +58,7 @@ or, you can also use the `--use-preincluded-data` flag to evaluate the results
 based on the data which is given by the package (these are created on the basis
 of my own personal solutions to the puzzles). Though, it is pretty much only for
 testing purposes and you're better off **using the preincluded unit tests
-instead.**
+instead.** See the next section for more information.
 
 ```bash
 # Run without user data.
@@ -67,6 +69,26 @@ $
 ```
 
 <br>
+
+## Testing
+
+In order to check the integrity of the tests, we can simply run the following command:
+
+```bash
+$ advent test  # or `aoc test`
+```
+
+This command will check the solutions against the preincluded dataset and the
+accepted solutions from the official [Advent of Code
+website](https://adventofcode.com) to verify their integrity. <br>
+
+## Developing
+
+Creating this utility was a fun project for me to take on alongside this awesome
+yearly event. But, if you would like to take the work further, I've included the
+requirements for programming on this project in the
+[CONTRIBUTING.md](CONTRIBUTING.md) file. Be sure to have a look and contribute!
+:D
 
 ## Contributing
 

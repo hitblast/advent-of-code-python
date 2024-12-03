@@ -4,6 +4,7 @@ import sys
 from datetime import datetime
 
 import click
+import pytest
 
 sys.path.append("../")
 
@@ -14,6 +15,17 @@ from sources import grab_data
 @click.group()
 def cli():
     pass
+
+
+# Create a new CLI command for running unit tests.
+@cli.command()
+def test() -> None:
+    result = pytest.main(["-q", "tests"])
+
+    if result == 0:
+        print("The solutions are all integrated and tested.")
+    else:
+        print("The solutions might not be integrated well.")
 
 
 # Create a new CLI command for running the Advent of Code solutions.
