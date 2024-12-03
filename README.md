@@ -2,21 +2,31 @@
 
 # 🐍 Advent of Code: Solutions in Python
 
+This repository is a curation of my personal solutions to the yearly "Advent of
+Code" puzzles, starting from December 2024. All of the solutions in this
+repository are written in the [Python](https://python.org) programming language.
+<br>
+
 </div>
 
 ## Table of Contents
 
-- [Overview](#overview)
+- [Installation](#installation)
 - [Get Started](#get-started)
 - [Contributing](#contributing)
 
 <br>
 
-## Overview
+---
 
-This repository is a curation of my personal solutions to the yearly "Advent of
-Code" puzzles, starting from December 2024. All of the solutions in this
-repository are written in the [Python](https://python.org) programming language.
+## Installation
+
+This project is based on Python 3.13.0, so you can easily install it using the `pip` package manager:
+
+```bash
+# Install from origin.
+$ pip install git+https://github.com/hitblast/advent-of-code-python.git
+```
 
 <br>
 
@@ -27,7 +37,7 @@ each day of Advent of Code. It provides access to a CLI tool which can be
 accessed through the `advent` / `aoc` command. A simple command example would be this:
 
 ```bash
-# with user data
+# Run with user data.
 $ advent run 3:1 --file path/to/input_data.txt
 
 Result: <some_result>
@@ -48,7 +58,7 @@ testing purposes and you're better off **using the preincluded unit tests
 instead.**
 
 ```bash
-# without user data
+# Run without user data.
 $ advent run 3:1 --use-preincluded-data
 
 Result: 167090022
