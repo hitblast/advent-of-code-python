@@ -2,12 +2,9 @@
 
 # 🐍 Advent of Code: Solutions in Python
 
-This repository is a curation of my personal solutions to the yearly "Advent of
-Code" puzzles, starting from December 2024. All of the solutions in this
-repository are written in the [Python](https://python.org) programming language.
-<br>
-
 </div>
+
+<br>
 
 ## Table of Contents
 
@@ -18,6 +15,14 @@ repository are written in the [Python](https://python.org) programming language.
 <br>
 
 ---
+
+<br>
+
+## Overview
+
+This repository is a curation of my personal solutions to the yearly "Advent of
+Code" puzzles, starting from December 2024. All of the solutions in this
+repository are written in the [Python](https://python.org) programming language. <br><br>
 
 ## Installation
 
